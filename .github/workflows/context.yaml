@@ -8,8 +8,8 @@ jobs:
       steps:
           - name: "step 1"
             run: |
-              echo "Hi $MY_ACTION!"
+              echo "Hi $MY_ACTION"
               echo "My repo $MY_REPO"
             env:
-                MY_ACTION: ${{github.action}}
-                MY_REPO: ${{github.action_repository}}
+                MY_ACTION: ${{ github.action }}
+                MY_REPO: ${{ github.action_repository }}
