@@ -12,4 +12,4 @@ jobs:
               echo "My repo $MY_REPO"
             env:
                 MY_ACTION: ${{ github.action }}
-                MY_REPO: ${{ github.action_repository }}
+                MY_REPO: ${{ github.repository }}
